@@ -1,0 +1,8 @@
+import requests
+
+response = requests.get('https://api.example.com/data')
+if response.status_code == 200:
+    data = response.json()
+    print("Received data:", data)
+else:
+    print("Request failed with status code:", response.status_code)
